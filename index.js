@@ -4,12 +4,12 @@ const cheerio = require('cheerio');
 const express = require('express');
 const app = express()
 
-/** obliger express à utiliser un port donné */
+/** pour obliger express à utiliser un port donné */
 // on set le port sur l'environment variable PORT ou si elle est undefined alors app doit prendre 3000 comme port
 app.set('port', process.env.PORT || 3000); 
 console.log("Express server écoutant le port " + app.get('port'))
 
-/** classique ~~~ ce qu'on voit le souvent dans les exos */
+/** classique ~~~ ce qu'on voit le plus souvent */
 // app.listen() relie et écoute les connexions sur un port donné
 // équivaut au Node http.Server.listen() 
 // si pas de port ou port 0 alors port aléatoire non utilisé assigné
